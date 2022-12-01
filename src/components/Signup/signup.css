@@ -1,0 +1,102 @@
+
+.abra-logo {
+    width: 115px;
+    height:43px;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.signup-titile {
+    width: 106px;
+    height: 23px;
+    font-size:15px;
+    line-height: 18px;
+    text-align: center;
+    color: #1E1E1E;
+    font-style: normal;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+.signup-form {
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.form-inputs {
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    width: 20rem;
+    height: 63px;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    padding: 15px;
+    color: #d9d9d9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+}
+
+
+.terms {
+    width: 21rem;
+    height: 63px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D9D9D9;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center; 
+}
+
+.signup-form input[type="checkbox"] {
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+}
+
+.signup-form span {
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.signup-form span a {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: left;
+    color: #3351A6;
+}
+
+
+
+.form-inputs[type="submit"] {
+    width: 20rem;
+    height: 68px;
+    border: none;
+    outline: none;
+    background-color: #3351A6;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom:2%;
+}
+
+.form-inputs[type="submit"]:hover {
+    cursor: pointer;
+}
