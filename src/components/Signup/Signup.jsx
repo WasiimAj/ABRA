@@ -20,7 +20,7 @@ const Signup = () => {
                     <span className=''>I have read and undrstand <a href="#1">Terms and Conditions</a></span>
                 </div> 
                 
-                <input className='form-inputs' type="submit" name='' value='SIGNUP' />
+                <input className='form-inputs' type="submit" value='SIGNUP' />
             </form>
         </>
     )

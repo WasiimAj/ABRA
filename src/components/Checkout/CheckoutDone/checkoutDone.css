@@ -1,0 +1,63 @@
+.checkout-done-div {
+    margin: 50% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.done-image {
+    width: 121px;
+    height: 121px;
+}
+
+.checkout-done-text {
+    width: 90%;
+    margin: auto;
+}
+
+.order-status {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #1E1E1E;
+    padding: 15px;
+}
+
+.message-status {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #8B8B8B;
+    /* padding: 5px 15px; */
+}
+
+.my-orders {
+    width: 218px;
+    height: 63px;
+    background-color: #3351A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 5% auto;
+}
+
+.my-orders > p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+.my-orders > img {
+    width: 30px;
+    height: 30px;
+}

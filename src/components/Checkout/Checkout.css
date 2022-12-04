@@ -1,0 +1,72 @@
+.steps-box {
+  width: 100vw;
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.step > button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #F3F3F3;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #3351A6;
+}
+
+.step > p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #000000;
+  padding: 15px;
+}
+
+.info-box {
+  width: 100%;
+  height: 500px;
+  background-color: #3351A6;
+}
+
+.sections-hide {
+  display: none;
+}
+
+.personal-info {
+  width: 90%;
+  height: 500px;
+  background-color: #000000;
+  margin: auto;
+  display: flex;
+}
+
+.shipping-address {
+  width: 90%;
+  height: 500px;
+  background-color: #e01414;
+  margin: auto;
+}
+
+.payment {
+  width: 90%;
+  height: 500px;
+  background-color: #73e014;
+  margin: auto;
+}

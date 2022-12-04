@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.website-logo {
+    width: 245px;
+    height: 91px;
+    display: block;
+    margin: 25% auto;
+}
+
+.forget-password {
+    width: 100%;  
+    display: flex;
+    align-items: flex-end;
+    justify-content:end;
+}
+
+.forget-password > a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #3351A6;
+    text-decoration: none;
+    padding: 15px;
+    margin: 1%;
+}
+
+.line {
+    width: 100%;
+    margin: 10% auto;
+}
+
+.horizntal-line {
+    margin-top: 5%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #D9D9D9;
+    position: relative;
+}
+
+
+.horizntal-line::before {
+    content: "";
+    background-color: #D9D9D9;
+    display: block;
+    height: 2px;
+    width: 120px;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.horizntal-line::after {
+    content: "";
+    position: absolute;
+    background-color: #D9D9D9;
+    display: block;
+    height: 2px;
+    width: 120px;
+    left: 0;
+    top: 50%;
+}
+
+.login-with {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-with > a {
+    text-decoration: none;
+    background-color: #DEDEDE;
+    border-radius: 20px;
+    width: 20rem;
+    height: 63px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F2D38;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2% auto;
+}
+
+.login-with > a > img {
+    width: 24px;
+    height: 24px;
+}
+
+.facebook {
+    background-color: #3B579D !important;
+    color: #ffffff !important;
+}
+
+.dont-have-account {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #1E1E1E;
+    text-decoration: none;
+    padding: 25px 10px;
+}
+
+.custom1 {
+    background-color: #F0112B !important;
+    color: #ffffff !important;
+    margin-bottom: 50%;
+}

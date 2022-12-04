@@ -1,0 +1,30 @@
+
+body {
+    position: relative;
+}
+
+.empty-cart {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+}
+
+.empty-cart > img {
+    width: 228px;
+    height: 228px;
+}
+
+.empty-cart > p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #2F2D38;
+}

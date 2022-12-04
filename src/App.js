@@ -1,14 +1,29 @@
-// import LandingPage from "./components/landingPage/LandingPage";
-// import Signup from "./components/Signup/Signup.jsx";
 import Home from "./components/Home/Home.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Product from "./components/product/Product";
+import Cart from "./components/Cart/Cart.jsx";
+import Login from "./components/Login/Login.jsx";
+import Signup from "./components/Signup/Signup.jsx";
+import Validation from "./components/validation/validation.jsx";
+import Checkout from "./components/Checkout/Checkout.jsx";
+import CheckoutDone from "./components/Checkout/CheckoutDone/CheckoutDone.jsx";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      {/* <LandingPage /> */}
-      {/* <Signup /> */}
-      <Home />
-    </div>
+    <>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={ <Home /> } />
+            <Route path="/product_id"  element={ <Product /> } />
+            <Route path="/cart"  element={ <Cart /> } />
+            <Route path="/login"  element={ <Login /> } />
+            <Route path="/signup"  element={ <Signup /> } />
+            <Route path="/validation"  element={ <Validation /> } />
+            <Route path="/checkout"  element={ <Checkout /> } />
+            <Route path="/checkout-done"  element={ <CheckoutDone /> } />
+          </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
