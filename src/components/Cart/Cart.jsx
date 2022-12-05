@@ -11,7 +11,9 @@ const Cart = () => {
                 src={emptyCart} 
                 alt="empty-cart-img" 
             />
-            <p>your cart is empty !</p>
+            <p>your cart is empty ! </p>
+            <a href="/" className='shop-now-btn'> SHOP NOW!</a>
+
         </div>
         {/* Empty Cart Section End Here .. */}
 

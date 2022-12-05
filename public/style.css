@@ -7,8 +7,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.App {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main-div-app {
+    width: 429px;
+    height: 1281px;
+    overflow: hidden;
+    position: relative;
 }

@@ -6,7 +6,7 @@ import Login from "./components/Login/Login.jsx";
 import Signup from "./components/Signup/Signup.jsx";
 import Validation from "./components/validation/validation.jsx";
 import Checkout from "./components/Checkout/Checkout.jsx";
-import CheckoutDone from "./components/Checkout/CheckoutDone/CheckoutDone.jsx";
+import CheckoutDone from './components/CheckoutDone/CheckoutDone.jsx';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/signup"  element={ <Signup /> } />
             <Route path="/validation"  element={ <Validation /> } />
             <Route path="/checkout"  element={ <Checkout /> } />
-            <Route path="/checkout-done"  element={ <CheckoutDone /> } />
+            <Route path="/checkout-done" element={ <CheckoutDone/>} />
           </Routes>
       </BrowserRouter>
     </>

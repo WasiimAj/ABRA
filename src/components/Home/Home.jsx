@@ -85,6 +85,12 @@ const ShowCart = () => {
     document.body.style.overflow = "hidden";
 }
 
+const HideCart = () => {
+    var cart = document.getElementById('cart');
+    cart.classList.remove('show-cart');
+    document.body.style.overflow = "auto";
+}
+
 
 // Show & Hide Function Start Here => Menue Sidiebar  ..
 
@@ -97,6 +103,11 @@ const Home = () => {
 
         
         <div className="cart" id='cart'>
+            <div
+                onClick={HideCart}
+                className="close-btn">
+                ✖
+            </div>
             <div className="cart-info">
                 <img className='cart-product-image'
                     src={product1} 
@@ -225,7 +236,7 @@ const Home = () => {
 
         {/* Header Section Start Here .. */}
 
-            <header className='Home-header'>
+            <header className='Home-page-header'>
                 <img 
                     onClick={ShowMenue}
                     className='menue-icon' 
@@ -233,7 +244,7 @@ const Home = () => {
                     alt="menue-icon"  
                 />
 
-                <img className='website-logo' src={logo} alt="menue-icon"  />
+                <img className='home-page-logo' src={logo} alt="menue-icon"  />
 
                 <div className='user-div1'>
                     <img 
@@ -262,6 +273,8 @@ const Home = () => {
                     images={images}
                     showBullets={false}
                     showNavs={true}
+                    navSize={30}
+                    navMargin={5}
                 />
             </div>
 

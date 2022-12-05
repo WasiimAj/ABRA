@@ -1,5 +1,5 @@
-body {
-    position: relative;
+.product-page-div {
+    width: 100%;
 }
 
 .product-header {
@@ -74,22 +74,7 @@ body {
     justify-content: space-between;
 }
 
-/* 
-.link {
-    border: 1px solid #3351A6;
-    border-radius: 20px;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #3351A6;
-    background-color: #ffffff;
-    text-decoration: none;
-    padding: 5px 15px;
-    text-align: center;
-    width: 30%;
-} */
+
 
 
 
@@ -161,24 +146,26 @@ body {
 }
 
 .add-to-cart {
+    width: 90%;
     background-color: #3351A6;
     border-radius: 20px;
-    display: block;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
-    margin: 3% auto;
     outline: none;
     border: none;
     padding: 15px;
-    width: 95%;
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+    cursor: pointer;
 }
 
 .product-added-overlay {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(47, 45, 56, 0);
     position:absolute;
     top: 0;
@@ -201,6 +188,8 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    position: absolute;
+    top: 60%;
 }
 
 .added {
@@ -222,7 +211,7 @@ body {
     display: none;
 }
 
-.show {
+.show-success-message {
     display: flex;
 }
 
@@ -328,16 +317,16 @@ body {
 /* Product Review Page End Here .. */
 
 
-.tabs {
-    list-style: none;
+.titles-bar {
     width: 90%;
     margin: 5% auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    list-style: none;
 }
 
-.tabs li {
+.slide-title {
     border: 1px solid #3351A6;
     border-radius: 20px;
     border-radius: 20px;
@@ -354,21 +343,20 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
-.tabs li.active {
-    color: #ffffff;
-    background-color: #3351A6;
+
+
+.active-slide-title {
+    color: #ffffff !important;
+    background-color: #3351A6 !important;
 }
 
 .content {
-    background-color: #ffffff;
+padding: 20px;
+width: 100%;
+height: 100%;
+display: none;
 }
 
-
-.content > div:not(:first-child) {
-    display: none;
-}
-
-
-.product -div{
-    width: 100%;
+.active-content {
+display: block;
 }

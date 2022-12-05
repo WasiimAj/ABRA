@@ -1,6 +1,6 @@
 import "./checkoutDone.css";
-import checkDone from "../../../Images/checkout-check.png";
-import next from "../../../Images/next.png";
+import checkDone from "../../Images/checkout-check.png";
+import next from "../../Images/next.png";
 
 const CheckoutDone = () => {
     return (

@@ -6,44 +6,32 @@ import back from "../../Images/back.png";
 import added from "../../Images/added.png";
 import check from "../../Images/check.png";
 
+import { useState } from "react";
 
 const ProductAdded = () => {
     var added = document.getElementById('added');        
     setTimeout(() => {
-        added.classList.add('show');
+        added.classList.add('show-success-message');
+        document.body.style.overflow = "hidden";
     }, "500")
     
     setTimeout(() => {
-        added.classList.remove('show');
+        added.classList.remove('show-success-message');
+        document.body.style.overflow = "auto";
     }, "2500")
 }
 
 
-var tabs = document.querySelectorAll(".tabs li");
-var tabsArray = Array.from(tabs);
-var divs = document.querySelectorAll(".content > div");
-var divsArray = Array.from(divs);
-
-tabsArray.forEach((ele) => {
-    ele.addEventListener("click", function (e) {
-        tabsArray.forEach((ele) => {
-        ele.classList.remove("active");
-    })
-        e.currentTarget.classList.add("active")
-        divsArray.forEach((div) => {
-        div.style.display = "none";
-    })
-    var current = document.querySelector(e.currentTarget.dataset.cont)
-    current.style.display = "block"
-    })
-})
-
-
-
-
 const Product = () => {
+
+    const [toggleState, setToggleState] = useState(1);
+
+    const toggleTab = (index) => {
+        setToggleState(index);
+    };
+
     return (
-        <>
+        <div className="product-page-div">
             <header className="product-header">
                 <a href="/">
                 <img
@@ -88,18 +76,30 @@ const Product = () => {
 
                 {/* Start Edit */}
 
+        <div className="titles-bar">
+            <button
+                className={toggleState === 1 ? "slide-title active-slide-title" : "slide-title "}
+                onClick={() => toggleTab(1)}
+            > Proudect
+            </button>
+            <button
+                className={toggleState === 2 ? "slide-title active-slide-title" : "slide-title "}
+                onClick={() => toggleTab(2)}
+            > Details
+            </button>
+            <button
+                className={toggleState === 3 ? "slide-title active-slide-title" : "slide-title "}
+                onClick={() => toggleTab(3)}
+            > Reviews
+            </button>
+        </div>
+
+        <div className="content-tabs">
+            <div
+                className={toggleState === 1 ? "content  active-content" : "content"}
+            >
                 
-            <ul className="tabs">
-                <li className="active" data-cont=".one">Proudect</li>
-                <li data-cont=".two">Details</li>
-                <li data-cont=".three">Reviews</li>
-            </ul>
-
-            <div className="content">
-
-                <div className="one">
-
-                    <div className="select-color">
+                <div className="select-color">
                     <p>Select Color:</p>
                     <div className="product-colors">
                         <div className="color color1">
@@ -122,10 +122,14 @@ const Product = () => {
                         <option value="small">S</option>
                     </select>
                 </div>
-                </div>
 
-                <div className="two">
-                    <div className="details">
+
+            </div>
+
+            <div
+                className={toggleState === 2 ? "content  active-content" : "content"}
+            >
+                            <div className="details">
                         <div className="brand">
                             <p>Brand</p>
                             <p>SKU</p>
@@ -144,11 +148,14 @@ const Product = () => {
                             <p>Dimond</p>
                         </div>
                     </div>
-                </div>
-                <div className="three">
+            </div>
+
+            <div
+                className={toggleState === 3 ? "content  active-content" : "content"}
+            >
                 <div className="reviews">
-                <div className="user-review-time">
-                    <div className="user-photo">MA</div>                    
+                    <div className="user-review-time">
+                    <div className="user-photo">MA</div>  
                 </div>
 
                 <div className="review">
@@ -205,10 +212,9 @@ const Product = () => {
                     </p>
                 </div>
             </div>
-                </div>
-
             </div>
-
+        </div>
+                {/* End Edit */}
 
                     <div className="product-added-overlay" id="added">
                         <div className="product-added">
@@ -224,7 +230,7 @@ const Product = () => {
                         Add to cart
                     </button>
             </div>
-        </>
+        </div>
     )
 }
 

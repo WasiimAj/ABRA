@@ -6,9 +6,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <>
+    <div className='main-div-app'>
       <App />
-    </>
+    </div>
   </React.StrictMode>
   );
   
