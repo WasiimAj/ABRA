@@ -352,7 +352,7 @@ const Home = () => {
                     <p className='product-price'>
                         100 SAR
                     </p>
-                    <button className='add-product-btn'>Add to cart</button>
+                    <a href='/checkout' className='add-product-btn'>Add to cart</a>
                 </div>
 
                 <div className="product">
@@ -368,7 +368,7 @@ const Home = () => {
                     <p className='product-price'>
                         100 SAR
                     </p>
-                    <button className='add-product-btn'>Add to cart</button>
+                    <a href='/checkout' className='add-product-btn'>Add to cart</a>
                 </div>
                 <div className="product">
                     <img className='product-image' src={product1} alt="product-img" />
@@ -383,7 +383,7 @@ const Home = () => {
                     <p className='product-price'>
                         100 SAR
                     </p>
-                    <button className='add-product-btn'>Add to cart</button>
+                    <a href='/checkout' className='add-product-btn'>Add to cart</a>
                 </div>
                 <div className="product">
                     <img className='product-image' src={product1} alt="product-img" />
@@ -398,7 +398,7 @@ const Home = () => {
                     <p className='product-price'>
                         100 SAR
                     </p>
-                    <button className='add-product-btn'>Add to cart</button>
+                    <a href='/checkout' className='add-product-btn'>Add to cart</a>
                 </div>
 
             </div>

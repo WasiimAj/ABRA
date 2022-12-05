@@ -108,7 +108,6 @@ const Checkout = () => {
 
           <a href="/checkout-done"
             className="continue-btn"
-            onClick={() => toggleTab(1)}  
           > Checkout </a>
         </div>
       </div>
