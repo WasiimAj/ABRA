@@ -190,7 +190,7 @@ const Home = () => {
                             src={myOrders} 
                             alt="icon-1" 
                         />
-                        <a className='menue-icons-name' href="#1">My Orders</a>
+                        <a className='menue-icons-name' href="/my-orders">My Orders</a>
                     </div>
                     <div className='navigation'>
                         <img
@@ -198,7 +198,7 @@ const Home = () => {
                             src={address} 
                             alt="icon-1" 
                         />
-                        <a className='menue-icons-name' href="#1">My Addresses</a>
+                        <a className='menue-icons-name' href="/my-address">My Addresses</a>
                     </div>
                     <div className='navigation'>
                         <img

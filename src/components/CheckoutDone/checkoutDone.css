@@ -47,7 +47,7 @@
     margin: 5% auto;
 }
 
-.my-orders > p {
+.my-orders > a {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -55,6 +55,7 @@
     text-align: center;
     color: #FFFFFF;
     padding: 15px;
+    text-decoration: none;
 }
 
 .my-orders > img {

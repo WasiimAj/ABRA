@@ -7,6 +7,9 @@ import Signup from "./components/Signup/Signup.jsx";
 import Validation from "./components/validation/validation.jsx";
 import Checkout from "./components/Checkout/Checkout.jsx";
 import CheckoutDone from './components/CheckoutDone/CheckoutDone.jsx';
+import Address from "./components/Address/Address.jsx";
+import MyOrders from "./components/MyOrders/MyOrders.jsx";
+
 
 const App = () => {
   return (
@@ -21,6 +24,8 @@ const App = () => {
             <Route path="/validation"  element={ <Validation /> } />
             <Route path="/checkout"  element={ <Checkout /> } />
             <Route path="/checkout-done" element={ <CheckoutDone/>} />
+            <Route path="/my-address" element={ <Address/>} />
+            <Route path="/my-orders" element={ <MyOrders/>} />
           </Routes>
       </BrowserRouter>
     </>

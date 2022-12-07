@@ -1,0 +1,165 @@
+.address-page-box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.address-header {
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address-header > a > img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.address-header > p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #3351A6;
+}
+
+.address-header > button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3351A6;
+    color: #ffffff;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.all-address-box {
+    width: 90%;
+    margin: auto;
+    height: 500px;
+}
+
+.address-location {
+    border: 1px solid #D9D9D9;
+    height: 95px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address-name {
+    margin: auto 5%;
+    width: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address-name > label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #3351A6;
+}
+
+.address-name > input {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #3351A6;
+}
+
+.edit-delete-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12%;
+    margin: auto 5%;
+}
+
+.edit-delete-address > img {
+    width: 15px;
+    height: 15px;
+    margin: 5%;
+    cursor: pointer;
+}
+
+/* Add Address Style Start Here .. */
+
+.add-address-box {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.add-address-box > header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-address-box > header > img {
+    width: 29px;
+    height: 29px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.add-address-box > header > p {
+    width: 80%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #3351A6;
+}
+
+.add-address-box > form > input {
+    width: 90%;
+    height: 48px;
+    padding: 15px;
+    display: block;
+    margin: 3% auto;
+    border: 1px solid #3351A6;
+    border-radius: 20px;
+    color: #3351A6;
+    outline: none;
+}
+
+
+.add-address-box > form > button {
+    outline: none;
+    border: none;
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 15px;
+    background: #3351A6;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    cursor: pointer;
+}

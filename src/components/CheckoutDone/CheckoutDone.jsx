@@ -15,7 +15,7 @@ const CheckoutDone = () => {
                         </p>
                     </div>
                     <div className="my-orders">
-                        <p>MY ORDERS</p>
+                        <a href="/">HOME</a>
                         <img src={next} alt="next-icon" />
                     </div>
             </div>

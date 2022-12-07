@@ -1,7 +1,5 @@
 import "./Product.css";
 import product from "../../Images/product-1.jpg";
-import logo from "../../Images/ABRA-logo-light (1).png";
-import shop from "../../Images/shoping-icon.png";
 import back from "../../Images/back.png";
 import added from "../../Images/added.png";
 import check from "../../Images/check.png";
@@ -38,20 +36,6 @@ const Product = () => {
                     className="go-back"
                     src={back}
                     alt="go-back-icon"
-                />
-                </a>
-                <a href="/">
-                <img 
-                    className="logo"
-                    src={logo} 
-                    alt="logo-icon" 
-                />
-                </a>
-                <a href="/cart">
-                <img 
-                    className="shoping-cart-icon"
-                    src={shop} 
-                    alt="shop-icon" 
                 />
                 </a>
             </header>
@@ -129,7 +113,7 @@ const Product = () => {
             <div
                 className={toggleState === 2 ? "content  active-content" : "content"}
             >
-                            <div className="details">
+                    <div className="details">
                         <div className="brand">
                             <p>Brand</p>
                             <p>SKU</p>
@@ -182,6 +166,26 @@ const Product = () => {
                     <div className="user-review">
                         <p className='user-name'>Mohammad Alabdullah</p>
                         <p className='review-date'>23 sept</p>
+                    </div>
+                    <p className='main-review'>
+                        Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Lorem Ipsum is simply 
+                        dummy text of the printing and typesetting industry. 
+                        Lorem Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem
+                    </p>
+                </div>
+            </div>
+
+            <div className="reviews">
+                <div className="user-review-time">
+                    <div className="user-photo">MA</div>                    
+                </div>
+
+                <div className="review">
+                    <div className="user-review">
+                        <p className='user-name'>Mohammad Alabdullah</p>
+                        <p className='review-date'>7 sept</p>
                     </div>
                     <p className='main-review'>
                         Lorem Ipsum is simply dummy text of the printing 

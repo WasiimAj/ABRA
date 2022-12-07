@@ -3,11 +3,12 @@ body::-webkit-scrollbar {
 }
 
 .Home-page-header {
-    width: 100%;
+    width: 95%;
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .menue-icon {
@@ -32,13 +33,13 @@ body::-webkit-scrollbar {
 }
 
 .search-icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .shop-icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .imge-slider  {
